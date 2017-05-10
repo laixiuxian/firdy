@@ -1,0 +1,126 @@
+/*全局选择器*/
+*{
+	margin:0;
+	padding:0;
+	}
+/*超链接去下滑线*/	
+a{
+	text-decoration:none;
+}	
+/*列表去序号*/
+ul,li{
+	list-style-type:none;
+}
+/*背景图*/
+.banner{
+	width:100%;
+	min-height:860px;
+	background:url("images/banner.jpg");/*背景图地址*/
+	background-repeat:no-repeat;    /*背景图是否平铺*/
+	background-size:100% 100%;      /*背景图大小*/
+	background-attachment:fixed;/*背景图是否固定或随页面其余部分滚动*/
+	}
+/*头部*/
+.header_top{
+	width:100%;
+	height:80px;
+	text-align:center;
+	background-color:#A0431A;
+	float:left;
+}
+.header_top>h1{
+	float:left;
+	margin-left:230px;
+	line-height:80px;
+	color:white;
+	font-size:50px;
+	font-family:Nixie One, cursive;
+}
+.social {
+ /*  float: left;   图标部分浮动与h1同行   */    
+    padding: 13px 0 0;      /*social中每一个图标都离上边线13px*/
+}
+.social ul{
+	margin-left:700px;     /*ul这个盒子整体移动*/
+	margin-top:15px;
+	
+}
+.social ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+.social ul li a.facebook{
+    background: url("images/social.png") no-repeat 0px 0px; 
+     /* 图片地址   不重复（默认垂直平铺）剪裁图片*/
+	width: 32px;   /* 图片大小*/
+    height: 32px;
+    display: block;
+}
+.social ul li a.twitter{
+    background: url(images/social.png) no-repeat -34px 0px ;
+}
+/*-34px 0px意思是背景图片从相对左顶点的左-34px（右34）上0的位置开始显示*/
+.social ul li a.chrome{
+    background: url(images/social.png) no-repeat ;
+	background-position:-68px 0px;
+	/*背景图片从相对左顶点的左-68px（右34）上0的位置开始显示*/
+}
+.social ul li a.in{
+    background: url(images/social.png) no-repeat -102px 0px ;
+}
+.social ul li a.facebook:hover{
+	opacity:0.5;  /*透明度 1不透明*/
+}
+/*导航*/
+.header_bottom{
+	width:100%;
+	height:60px;
+	background-color:white;
+}
+.nav{
+	margin-left:220px;  /*导航左偏 margin:0 auto无效*/
+	text-align:center;
+}
+	.nav_1{
+	float:left;
+	width:180px;
+	height:60px;
+	font-size:18px;
+	color:red;
+	line-height:60px;
+	display:inline-block;
+	}
+.nav_1:hover{
+    background-color:#A0431B;
+	color:#fff ! important;
+}
+/*home默认红色白字*/
+.nav_2{
+	background:#A0431A;
+	color:white;
+	}
+	/*active不会*/
+/*背景图上文字*/
+.ban_para{
+	margin-top: 240px;
+	margin-left:220px;
+	
+    background: rgba(160, 67, 26, 0.71);
+	clear:both;
+	width:450px;
+	height:150px;
+	opacity:0.8;
+    padding: 1.5em;
+    background: rgba(160, 67, 26, 0.71);
+}
+.ban_para>h2{
+	font-size: 1.5em;
+    color: #fff;
+    line-height: 1.3em;
+	font-family:'Nixie One', cursive;
+}
+.ban_para>p{
+    font-size: 1em;
+    color:#ec9d7a;
+    line-height: 1.8em;
+}
